@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Bài tập] Tạo form lấy survey khách hàng</title>
+</head>
+
+<body
+    style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-size: small;">
+    <h2>Market Research Survey</h2>
+    <p>Please take a few moments to complete this satisfaction survey.</p>
+    <hr>
+    <form action="">
+        <label for="age"><b>What is your age range?</b></label>
+        <br>
+        <select name="age" id="age" style="width: 50%;">
+            <option value="1">18-24</option>
+            <option value="2">25-34</option>
+            <option value="3">35-50</option>
+            <option value="4">50+</option>
+        </select>
+        <br><br>
+        <label for="money"><b>What is your yearly income range?</b></label>
+        <br>
+        <select name="money" id="money" style="width: 50%;">
+            <option value="1">$0 - $25,000</option>
+            <option value="2">$25,001 - $50,000</option>
+            <option value="3">$50,001 - $100,000</option>
+            <option value="4">$100,001+</option>
+        </select>
+        <br><br>
+        <B>Gender Identity</B>
+        <table>
+            <tr>
+                <td><input type="radio" name="gender" id="male" value="male" checked></td>
+                <td><label for="male">Male</label></td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="gender" id="female" value="Female"></td>
+                <td><label for="female">Female</label></td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="gender" id="Nonbinary" value="Nonbinary"></td>
+                <td><label for="Nonbinary">Nonbinary</label></td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="gender" id="other" value="other"></td>
+                <td><label for="other">Other</label></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="text"></td>
+            </tr>
+        </table>
+        <br>
+        <b>Which of the following products have your purchased in the last 2 months. Please check all that apply.</b>
+        <br>
+        <input type="checkbox" name="product" id="product1"><label for="product1">Product 1</label>
+        <br>
+        <input type="checkbox" name="product" id="product2"><label for="product2">Product 2</label>
+        <br>
+        <input type="checkbox" name="product" id="product3"><label for="product3">Product 3</label>
+    </form>
+
+
+</body>
+
+</html>

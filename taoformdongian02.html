@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Bài tập] Tạo form đơn giản 2</title>
+</head>
+<style>
+    table {
+        border-collapse: collapse;
+    }
+</style>
+
+<body>
+    <form action="" method="post">
+        <table style="background-color: aquamarine; width: 50%;" align="center">
+            <tr>
+                <td>
+                    <table border="0" align="center" style="width: 90%; background-color: white; margin: 10 10 10 10">
+                        <tr>
+                            <th colspan="2" style="padding: 10px; background-color: orangered; color: white;">SỞ THÍCH
+                                CỦA BẠN</th>
+                        </tr>
+                        <tr>
+                            <td style="text-align:right ; color: blue;"><label for="hvt">Họ và tên</label></td>
+                            <td><input type="text" name="hovaten" id="hvt" size="40"></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:right ;color: blue;"><label for="mail">Email</label></td>
+                            <td><input type="text" name="email" id="mail"> </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:right ;color: blue;">Sở thích</td>
+                            <td>
+                                <table style="color:orangered;">
+                                    <tr>
+                                        <td><input type="checkbox" name="thethao">Thể thao</td>
+                                        <td><input type="checkbox" name="amnhac">Âm nhạc</td>
+                                        <td><input type="checkbox" name="docsach">Đọc sách</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="luotweb">Lướt web</td>
+                                        <td><input type="checkbox" name="choigame">Chơi game</td>
+                                        <td><input type="checkbox" name="dienanh">Điện ảnh</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="dulich">Du lịch</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <Td></Td>
+                            <td>
+                                <button type="submit">Gửi thông tin</button>
+                                <button type="reset">Nhập lại</button>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
