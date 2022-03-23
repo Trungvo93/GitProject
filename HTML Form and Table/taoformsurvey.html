@@ -7,7 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>[Bài tập] Tạo form lấy survey khách hàng</title>
 </head>
-
+<style>
+    table{
+        border-collapse: collapse;
+    }
+    .td{
+        text-align: center;
+    }
+</style>
+<!--<style>
+    table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(odd){
+    background-color: #dddddd;
+}
+</style>-->
 <body
     style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-size: small;">
     <h2>Market Research Survey</h2>
@@ -34,7 +56,7 @@
         <br><br>
         <B>Gender Identity</B>
         <table>
-            <tr>
+            <tr >
                 <td><input type="radio" name="gender" id="male" value="male" checked></td>
                 <td><label for="male">Male</label></td>
             </tr>
@@ -63,6 +85,66 @@
         <input type="checkbox" name="product" id="product2"><label for="product2">Product 2</label>
         <br>
         <input type="checkbox" name="product" id="product3"><label for="product3">Product 3</label>
+        <br><br>
+        <span><b>How often would you use our new product?</b></span>
+        <br><input type="radio" name="often" id="daily"><label for=daily>Daily</label>
+        <br><input type="radio" name="often" id="weekly"><label for=weekly>Weekly</label>
+        <br><input type="radio" name="often" id="monthly"><label for=monthly>Monthly</label>
+        <br><br>
+        <span><b>What would you pay for the new product?</b></span>
+        <table>
+            <tr>
+                <td>$</td>
+                <td><input type="text" name="dollar" size="10"> - </td>
+                <td><input type="text" name="cent" size="2"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Dollars</td>
+                <td>Cents</td>
+            </tr>
+        </table>
+        <br><br>
+        <span><b>What features would you like to see in the new product.</b></span>
+        <br><textarea style="width: 100%; resize: none; height: 100px;"></textarea>
+        <br><br>
+        <span><b>Please rate your level of agreement with the following statements.</b></span>
+        <table style="width: 100%;" border="2">
+            <tr style="background-color: antiquewhite;">
+                <td></td>
+                <th>Strongly Disagree</th>
+                <th>Disagree</th>
+                <th>Agree</th>
+                <th>Strongly Agree</th>
+            </tr>
+            <tr>
+                <Td>Our products are priced fairly.</Td>
+                <td class="td"><input type="radio" name="price"><br>1</td>
+                <td class="td"><input type="radio" name="price"><br>2</td>
+                <td class="td"><input type="radio" name="price"><br>3</td>
+                <td class="td"><input type="radio" name="price"><br>4</td>
+            </tr>
+            <tr style="background-color: blanchedalmond;">
+                <Td>Our products are high quality.</Td>
+                <td class="td"><input type="radio" name="quality"><br>1</td>
+                <td class="td"><input type="radio" name="quality"><br>2</td>
+                <td class="td"><input type="radio" name="quality"><br>3</td>
+                <td class="td"><input type="radio" name="quality"><br>4</td>
+            </tr>
+            <tr>
+                <Td>You would recommend our product to a friend or coworker.</Td>
+                <td class="td"><input type="radio" name="friend"><br>1</td>
+                <td class="td"><input type="radio" name="friend"><br>2</td>
+                <td class="td"><input type="radio" name="friend"><br>3</td>
+                <td class="td"><input type="radio" name="friend"><br>4</td>
+            </tr>
+        </table>
+        <br>
+        <button type="submit">Submit</button>
+
+
+
+
     </form>
 
 
