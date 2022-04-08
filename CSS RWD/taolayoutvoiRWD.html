@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%; background-color: beige;}
+    [class*="col-"]{
+        float: left;
+    }
+    .menu{
+        height: 100px;
+        background-color: rgb(53, 52, 52);
+        font-size: 20px;
+        margin:0px;
+    }
+    .menu ul li{
+        position: relative;
+        /* left: 0px;
+        top: 0px; */
+        float: left;
+        list-style: none;
+        padding-right: 10px;
+    }
+    .menu ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    .menu ul{
+        /* display:block;
+        margin-left: auto; margin-right: auto; */
+        padding: 20px 20px;
+    }
+
+
+    .aside-left{
+        background-color: rgb(122, 120, 120);
+       height:calc(100%-250px);
+    }
+    .content{
+        height:calc(100%-250px);
+    }
+    /* .content p{
+       width: auto;
+       vertical-align: bottom;
+    } */
+    .aside-right{
+        background-color: rgb(122, 120, 120);
+        height:calc(100%-250px);
+    }
+    .footer{
+        height: 150px;
+        background-color: blueviolet;
+    }
+</style>
+<body>
+    <div class="menu col-12">
+            <ul>
+                <li><a href="">Logo</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Project</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+    </div>
+
+    <div class="aside-left col-2">
+            <ul>
+                <li><a href="">Link</a></li>
+                <li><a href="">Link</a></li>
+                <li><a href="">Link</a></li>
+            </ul>
+    </div>
+    <div class="content col-8">
+        <p>ABC</p>
+</div>
+<div class="aside-right col-2">
+    <ul>
+        <li><a href="">Link</a></li>
+        <li><a href="">Link</a></li>
+        <li><a href="">Link</a></li>
+    </ul>
+</div>
+<div class="footer col-12"></div>
+</body>
+</html>
