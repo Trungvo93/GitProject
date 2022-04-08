@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tạo layout với RWD</title>
 </head>
 <style>
     *{
@@ -21,83 +21,100 @@
     .col-9 {width: 75%;}
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
-    .col-12 {width: 100%; background-color: beige;}
-    [class*="col-"]{
-        float: left;
+    .col-12 {width: 100%;}
+
+    [class^="col-"]{
+        float:left;
     }
-    .menu{
+    .row::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+    .row{
+        position: absolute;
+        width: 100%;
+        height: 100%-200px;
+        /* background-color: aqua; */
+        top: 100px;
+        left: 0px;
+        bottom: 100px;
+
+    }
+    header{
+        width: 100%;
         height: 100px;
-        background-color: rgb(53, 52, 52);
-        font-size: 20px;
-        margin:0px;
+        position: fixed;
+        background-color: gray;
+        top: 0px;
+        left: 0px;
     }
-    .menu ul li{
-        position: relative;
-        /* left: 0px;
-        top: 0px; */
-        float: left;
+    header ul{
+        margin-top: 0px;
+        padding-left:0px
+    }
+    header li{
         list-style: none;
-        padding-right: 10px;
+        position: relative;
+        /* float: left; */
+        display:inline-flex;
+        background-color: red;
+        height:100px;
+        width: 100px;
+        
     }
-    .menu ul li a{
+    header li a{
+        display: block;
+        text-align: center;
         text-decoration: none;
         color: white;
+        font-size: larger;
+        
     }
-    .menu ul{
-        /* display:block;
-        margin-left: auto; margin-right: auto; */
-        padding: 20px 20px;
+    header li:hover{
+        background-color: black;
     }
-
-
-    .aside-left{
-        background-color: rgb(122, 120, 120);
-       height:calc(100%-250px);
+    footer{
+        width: 100%;
+        height: 100px;
+        position: fixed;
+        background-color: rgb(177, 174, 174);
+        bottom: 0px;
+        left: 0px;
+    }
+    .side-left{
+        background-color: rgb(213, 213, 211);
+        height: 100%;
     }
     .content{
-        height:calc(100%-250px);
+        background-color: rgb(62, 62, 44);
+        height: 100%;
     }
-    /* .content p{
-       width: auto;
-       vertical-align: bottom;
-    } */
-    .aside-right{
-        background-color: rgb(122, 120, 120);
-        height:calc(100%-250px);
-    }
-    .footer{
-        height: 150px;
-        background-color: blueviolet;
+    .side-right{
+        background-color: rgb(213, 213, 211);
+        height: 100%;
     }
 </style>
 <body>
-    <div class="menu col-12">
-            <ul>
-                <li><a href="">Logo</a></li>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Project</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-    </div>
+    <header>
+        <ul>
+            <li><a href="">Logo</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </header>
+    <div class="row">
+        <div class="col-2 side-left">
+        </div>
+        <div class="col-8 content">
 
-    <div class="aside-left col-2">
-            <ul>
-                <li><a href="">Link</a></li>
-                <li><a href="">Link</a></li>
-                <li><a href="">Link</a></li>
-            </ul>
+        </div>
+        <div class="col-2 side-right"></div>
     </div>
-    <div class="content col-8">
-        <p>ABC</p>
-</div>
-<div class="aside-right col-2">
-    <ul>
-        <li><a href="">Link</a></li>
-        <li><a href="">Link</a></li>
-        <li><a href="">Link</a></li>
-    </ul>
-</div>
-<div class="footer col-12"></div>
+    <footer>
+
+    </footer>
 </body>
 </html>
