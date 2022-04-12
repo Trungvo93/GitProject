@@ -13,11 +13,11 @@
         text-align: center;
     }
         
-    [class*="col-"]{
+    [class^="col-"]{
         float: left;
         border: 1px solid black;
     }
-    @media screen and (max-width:576px)
+    @media screen and (max-width:576px)/*Mobile*/
     {
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
@@ -33,7 +33,8 @@
     .col-12 {width: 100%;}
     }
 
-    @media screen and (min-width: 577px) {
+    @media screen and (min-width: 577px)/*Tablet*/
+    {
     .col-md-1 {width: 8.33%;}
     .col-md-2 {width: 16.66%;}
     .col-md-3 {width: 25%;}
@@ -47,7 +48,8 @@
     .col-md-11 {width: 91.66%;}
     .col-md-12 {width: 100%;}
     }
-    @media screen and (min-width:768px){
+    @media screen and (min-width:768px)/*PC*/
+    {
     .col-xl-1 {width: 8.33%;}
     .col-xl-2 {width: 16.66%;}
     .col-xl-3 {width: 25%;}
@@ -61,6 +63,7 @@
     .col-xl-11 {width: 91.66%;}
     .col-xl-12 {width: 100%;}
     }
+
 </style>
 <body>
     <div class="col-12 col-md-12 col-xl-12">1</div>
