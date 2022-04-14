@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .note{
+        width: 100%;
+        background-color: yellow;
+        text-align: center;
+        padding: 20px;
+        /*Nếu để Height thì sẽ k căn giữa như này được*/
+    }
+    header{
+        background-color:rgb(95, 189, 158);
+        color: white;
+        text-align: center;
+        padding: 50px;
+    }
+    header div h1{
+        padding: 10px;
+    }
+
+    nav{
+        background-color: rgb(66, 64, 64);
+        color: white;
+    }
+
+    nav ul{
+        display: flex;
+        list-style: none;
+    }
+    nav ul li{
+        padding: 15px;
+    }
+
+    nav ul li:hover{
+        background-color:grey;
+    }
+    main{
+        display: flex;
+        flex-wrap: wrap; /*Tự xuống hàng của flex-item khi cần thiết*/
+    }
+
+    aside{
+        flex: 30%;
+        background-color: gainsboro;
+        padding: 30px 15px;
+    }
+    #fakeimg{
+        height: 150px;
+        background-color: grey;
+    }
+    article{
+        flex: 70%;
+        background-color: aquamarine;
+    }
+
+    footer{
+        background-color: grey;
+    }
+
+    /* Giao diện bé hơn 576px 'nav' thành cột */
+    @media screen and (max-width:576px) {
+        nav ul{
+            flex-direction: column;
+        }
+    }
+</style>
+<body>
+    <div class="note">
+        <h4>Resize the browser window to see the responsive effect.</h4>
+    </div>
+    <header>
+        <div>
+        <h1>My Website</h1>
+        <p>With a <b>flexible</b> layout.</p>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li>Link</li>
+            <li>Link</li>
+            <li>Link</li>
+            <li>Link</li>
+        </ul>
+    </nav>
+    <main>
+        <aside>
+            <h2>About Me</h2>
+            <h5>Photo of me:</h5>
+            <div id="fakeimg">Iamge</div>
+            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+
+        </aside>
+
+        <article>
+            Some text..
+            Sunt in culpa qui officia deserunt mollit
+            anim id est laborum consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco.
+        </article>
+    </main>
+
+    <footer>
+        Footer
+    </footer>
+</body>
+</html>
