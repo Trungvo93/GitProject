@@ -1,14 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hair Studio Website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 </head>
+
 <body>
-    <div class="services">
+    <header id="header">
+        <img src="./Media/images/logo.png" alt="Logo" class="logo">
+        <div class="text-banner">
+            <h1>Hair Studio</h1>
+            <p>Style Your Hair Is Style Your Life</p>
+            <button type="button"><span></span> Find Out</button>
+            <button type="button"><span></span> Read More</button>
+        </div>
+    </header>
+
+    <!-- SideBar -->
+    <div id="sidebar">
+        <nav>
+        <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#testimonial">Testimonial</a></li>
+            <li><a href="#footer">Meet Us</a></li>
+        </ul>
+        </nav>
+        <button type="button" id="btnmenu">
+            <img src="./Media/images/menu.png" alt="Show Menu" id="menu">
+        </button>
+    </div>
+    <!-- End SideBar -->
+
+    <!-- Script for Button Menu -->
+    <!-- biến chỉ được viết liền không có dấu - -->
+    <script> 
+        var btnmenu =document.getElementById("btnmenu");
+        var sidebar= document.getElementById("sidebar");
+        var menu=document.getElementById("menu");
+        sidebar.style.right="-250px";
+        btnmenu.onclick = function() {
+            if(sidebar.style.right == "-250px")
+            {
+                sidebar.style.right = "0px";
+                menu.scr = "./Media/images/close.png";
+            }
+            else
+            {
+                sidebar.style.right = "-250px";
+                menu.scr = "./Media/images/menu.png";
+            }
+        }
+            // All animations will take exactly 500ms
+    var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 1000,
+        speedAsDuration: true
+    });
+    </script>
+    <!-- End Script -->
+
+    <!-- Feature content -->
+    <div id="features">
+        <div class="headfeatures">
+            <p>FEATURES</p>
+            <h1>Why Choose Us</h1>
+        </div>
+        <div class="inforfeatures">
+            <div class="inforfeatures-item">
+            <section class="inforfeatures1">
+                <h2>Experienced Staff</h2>
+                <div class="inforfeatures-content">
+                    <i class="bi bi-shield-shaded"></i>
+                    <p>Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit.
+                    Praesent erat mi, dignissim vel malesuada quis,
+                    lacinia vel diam.
+                    </p></div>
+                
+            </section>
+            <section class="inforfeatures2">
+                <h2>Pre Booking Online</h2>
+                <div class="inforfeatures-content">
+                <i class="bi bi-check2-square"></i>
+                <p>Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.
+                Praesent erat mi, dignissim vel malesuada quis,
+                lacinia vel diam.
+                </p>
+                </div>
+            </section>
+            <section class="inforfeatures3">
+                <h2>Affordable Cost</h2>
+                <div class="inforfeatures-content">
+                <i class="bi bi-currency-euro"></i>
+                <p>Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.
+                Praesent erat mi, dignissim vel malesuada quis,
+                lacinia vel diam.
+                </p>
+                </div>
+            </section>
+            </div>
+            <div class="imgfeatures">
+                <img src="./Media/images/barber-man.jpg" alt="Barbet man">
+            </div>
+        </div>
+    </div>
+    <!-- End Feature content -->
+
+    <!-- Services content -->
+    <div id="services">
+        <div class="services-content">
         <div class="about-services">
             <p>SERVICES</p>
             <H1>We Provider Better</H1>
@@ -67,6 +179,124 @@
                 <div class="overlay"></div>
             </div>
         </div>
+        </div>
     </div>
+    <!-- End Services content -->
+
+    <!-- TESTIMONIAL content -->
+    <div id="testimonial">
+        <div class="head-testimonial">
+            <p>TESTIMONIAL</p>
+            <h1>What Client Says</h1>
+        </div>
+        <div class="content-testimonial">
+            <div class="testimonial-item">
+                <div class="testimonial-info">
+                    <img src="./Media/images/img-1.jpg" alt="">
+                    <div class="testimonial-name">
+                        <h4>KEN NORMAN </h4>
+                        <p>@kennorman</p>
+                    </div>
+                    <i class="bi bi-twitter"></i>
+                </div>
+                <div class="testimonial-text">
+                    <p>Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                        In iaculis dignissim lacus,
+                        non vestibulum velit facilisis in.</p>
+                </div>
+            </div>
+            <div class="testimonial-item">
+                <div class="testimonial-info">
+                    <img src="./Media/images/img-2.jpg" alt="">
+                    <div class="testimonial-name">
+                        <h4>KARIAN NICK</h4>
+                        <p>@kariannick</p>
+                    </div>
+                    <i class="bi bi-twitter"></i>
+                </div>    
+                <div class="testimonial-text">
+                        <p>Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit.
+                            In iaculis dignissim lacus,
+                            non vestibulum velit facilisis in.</p>
+                </div>
+                
+            </div>
+            <div class="testimonial-item">
+                <div class="testimonial-info">
+                    <img src="./Media/images/img-3.jpg" alt="">
+                    <div class="testimonial-name">
+                        <h4>DIARA JAMES</h4>
+                        <p>@diarajames</p>
+                    </div>
+                    <i class="bi bi-twitter"></i>
+                </div>
+                <div class="testimonial-text">
+                        <p>Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit.
+                            In iaculis dignissim lacus,
+                            non vestibulum velit facilisis in.</p>
+                </div>
+                
+            </div>
+               
+            
+
+        </div>
+
+    </div>
+
+    <!-- End TESTIMONIAL content -->
+
+    <!-- Begin Footer -->
+    <footer id="footer">
+        <img src="./Media/images/footer-img.png" alt="Logo footer">
+        <div class="head-footer">
+            <p>CONTACT</p>
+            <h1>Visit Shop Today</h1>
+        </div>
+        <div class="text-footer">
+            <div class="footer-item-left">
+                <h2>Openning Hours</h2>
+                <p>
+                    <i class="bi bi-clock"></i>
+                    Monday to Friday - 9am to 9pm
+                </p>
+                <p>
+                    <i class="bi bi-clock"></i>
+                    Satuday to Sunday - 8am to 11pm
+                </p>
+            </div>
+
+            <div class="footer-item-right">
+                <h2>Get In Touch</h2>
+                <p>
+                    #30 abc Colony, xyz City IN 
+                    <i class="bi bi-geo-alt"></i>
+
+                </p>
+                <p>
+                    example@website.com
+                    <i class="bi bi-paperclip"></i>
+
+                </p>
+                <p>
+                    +01 123456789
+                    <i class="bi bi-phone"></i>
+                </p>
+
+            </div>
+        </div>
+        <div class="contact-footer">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-youtube"></i>
+            <p>Copyright Easy Tutorials Youtube Chanel</p>
+        </div>
+    </footer>
+    <!-- End Footer -->
 </body>
+
 </html>
