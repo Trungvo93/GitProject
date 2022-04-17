@@ -18,12 +18,13 @@
 }
 .overlay {
     width: 100%;
-    height: 100%;
+    height: 99%;
     position: absolute;
     top: 0;
     border-radius: 15px;
     background: linear-gradient(rgba(0,0,0,0.5),#009688);
     opacity: 0;
+    transition: 1s;
 }
 .about-services p{
     color: #009688;
@@ -64,13 +65,15 @@
 
 
 .infor-services{
-    visibility: hidden;
+    /* visibility: hidden; */
     position:absolute;
     bottom: 10px;
     text-align: center;
     color: white;
     /* width: 80%; */
     z-index: 2;
+    opacity: 0;
+    transition: 1s;
 }
 
 .infor-services hr{
@@ -85,14 +88,14 @@
 }
 
 .item-services:hover .infor-services{
-    visibility: visible;
+    /* visibility: visible; */
+    opacity: 1;
     transform: translateY(-180%);
-    transition: 1s;
 }
 
 .item-services:hover .overlay{
     opacity: 1;
-    transition: 1s;
+    
     cursor: pointer;
     z-index: 1;
 }
