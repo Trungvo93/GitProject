@@ -1,0 +1,57 @@
+*{
+    box-sizing: content-box;
+    padding: 0;
+    margin: 0;
+}
+
+.header__top{
+    padding: 1rem 0rem;
+}
+.header__logo img{
+    width: 50%;
+    padding-left: 10rem;
+}
+
+.header__nav ul{
+    position: relative;
+    float:right;
+    padding-right: 10rem;
+
+}
+
+.nav{
+    display: inline-block;
+}
+
+.nav__link{
+    text-decoration: none;
+    color:black;
+    font-weight: 500;
+    margin: 0rem 1rem;
+}
+
+.nav__link--btn{
+    color: aqua;
+    border: 1px solid aqua;
+    padding: 0.5rem 1rem;
+}
+
+.header__banner{
+    background: url(../images/slider.jpg);
+    background-size: 100%;
+    text-align: center;
+    color: white;
+    height: 100%;
+    padding: 5rem 10rem;
+    box-shadow: inset 0 0 0 1000px rgb(0 0 0 /50%)
+}
+
+.header__title{
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 3.5rem;
+}
+
+.header__subtitle{
+    font-size: 1.5rem;
+}

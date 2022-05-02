@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+aside{
+    background-color: #231b2e;
+    height: 100vh;
+}
+
+.logo-brand img{
+    width: 150px;
+}
+
+.menu-personal{
+    position: absolute;
+    left: 0px;
+}
+.menu-personal ul{
+    list-style: none;
+}
+
+.menu-personal ul li a{
+    color: white;
+    text-decoration: none;
+}
